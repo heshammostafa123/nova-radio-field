@@ -7,7 +7,7 @@
                 </h4>
             </slot>
         </div>
-        <div class="w-3/4 py-4">
+        <div class="w-3/4 py-4" style="margin: 0px 30px 0px 30px;">
             <slot name="value">
                 <p class="text-90" :title="this.field.value" :aria-label="this.field.value">{{ getOptionLabel(value) }}</p>
                 <span v-if="hasOptionHint(value)" class="radio-hint mt-1 block text-sm text-80 leading-normal">{{ getOptionHint(value) }}</span>
